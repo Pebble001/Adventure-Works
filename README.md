@@ -2,7 +2,7 @@
 
 ### Dashboard Link : https://mcmasteru365-my.sharepoint.com/:u:/g/personal/obisakii_mcmaster_ca/ESd4JfTWDEREjf07PUxv5BYBs9Gg1VF5HkTlP8kSk2T-3Q?e=snTRCZ
 
-PDF link:[ ](https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:09235c11-d750-40ea-907a-f2f078a1a507)
+PDF link: https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:09235c11-d750-40ea-907a-f2f078a1a507
 
 ## Problem Statement
 
