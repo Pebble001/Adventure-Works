@@ -28,6 +28,9 @@ monetary value frequency and recency
 
 <img width="1142" alt="Screenshot 2025-01-03 at 5 29 53 PM" src="https://github.com/user-attachments/assets/133cb374-2257-43da-9062-7aeffbcd9be3" />
 
+
+
+
 <img width="1140" alt="Screenshot 2025-01-03 at 5 36 58 PM" src="https://github.com/user-attachments/assets/84ab1737-e35b-4ed5-a0a3-c7317ec9e4a1" />
 
 - Step 10 :  Customer Segmentation
