@@ -51,14 +51,15 @@ monetary value frequency and recency
  
  <img width="610" alt="Screenshot 2025-01-03 at 5 24 35 PM" src="https://github.com/user-attachments/assets/a65b4655-fbff-4be8-9b8e-72e329a0d86e" />
 
-            •	High frequency boughtproducts: Mountain Bottle Cage, Water Bottle - 30 oz., Road Bottle Cage, AWC Logo Cap, Sport-100 Helmet Blue, Sport-100 Helmet Black, HL Mountain Tire and Mountain Tire Tube.
+ •	High frequency boughtproducts: Mountain Bottle Cage, Water Bottle - 30 oz., Road Bottle Cage, AWC Logo Cap, Sport-100 Helmet Blue, Sport-100 Helmet Black, HL Mountain Tire and Mountain Tire Tube.
  
-            •	Total sales by product categories: Accessories (35.19%), Bike (33.53%), Clothing (31.28%)
+    
+    •	Total sales by product categories: Accessories (35.19%), Bike (33.53%), Clothing (31.28%)
 
 <img width="317" alt="Screenshot 2025-01-03 at 5 29 32 PM" src="https://github.com/user-attachments/assets/16d80791-4b59-4364-9d7c-3175dd224310" />
 
 
 
-            •	Total sales: Accessories ($92.76M), Bike ($88.39M), Clothing ($82.44M)
+      •	Total sales: Accessories ($92.76M), Bike ($88.39M), Clothing ($82.44M)
    
    <img width="501" alt="Screenshot 2025-01-03 at 5 27 43 PM" src="https://github.com/user-attachments/assets/fb4637f4-f5bb-4c49-8e9f-9a64a417c858" />
