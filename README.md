@@ -1,70 +1,90 @@
-# Sales analysis for Adventureworks-Dashboard
+# Adventure Works — Customer Segmentation & RFM Analysis
 
-### Dashboard Link :  https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:09235c11-d750-40ea-907a-f2f078a1a507
+A SQL and Power BI project analysing 19,000 customers from the AdventureWorks dataset (May 2011 – June 2014). The analysis uses **RFM (Recency, Frequency, Monetary)** scoring to segment customers and identify retention and revenue opportunities.
 
-## Problem Statement
+---
 
-This dashboard helps Adventureworks understand their sales pattern between May 1, 2011 and June 30, 2014 . To provide insights to address business challenges relating to:
-Customer segmentation
-Customer retention
-Cross selling and upselling
-Customer lifetime value estimation
+## Overview
 
-### Steps followed 
+AdventureWorks is a fictional manufacturing company used as a Microsoft sample database. This project treats it as a real business problem: understanding which customers are loyal, which are at risk of churning, and where cross-selling opportunities exist.
 
-- Step 1 : Loaded data into Power BI Desktop, dataset is a csv file.
-  
-- Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
-  
-- Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
-- Step 4 : It was observed that none of the columns had errors & empty values.
-  
-- Step 5 : In the report view, under the view tab, theme was selected.
-  
-- Step 6 : Total sales, total customers, average frequency and average recency were calculated at 109.85M, 19,000, 6.35 and 5,80 respectively represented by card visuals.
-  
-- Step 7 : Percentage of customers without any purchase in the last 12 months was calculated at 3.52% 
-- Step 8 : Line charts were introduced to illustrate Recency by customers and  monetary value by recency.
+**Business Questions:**
+- Which customers are most valuable and most likely to churn?
+- What product combinations are most frequently bought together?
+- How do customer segments differ in spending behaviour?
 
-<img width="503" alt="Screenshot 2025-01-03 at 5 36 24 PM" src="https://github.com/user-attachments/assets/e51d73dd-9a24-4db0-bfc4-725c898a8276" />
+---
 
-- Step 9 : Column charts, donut and pie charts were also used to determine customer segmentations; decline or increase in 
-monetary value frequency and recency 
+## Tools Used
+- **SQL** (Azure Data Studio) — data extraction, RFM calculation, segmentation logic
+- **Power BI** — interactive dashboard and visualisations
+- **Excel** — data preparation
 
-<img width="1142" alt="Screenshot 2025-01-03 at 5 29 53 PM" src="https://github.com/user-attachments/assets/133cb374-2257-43da-9062-7aeffbcd9be3" />
+---
 
+## Methodology
 
+### RFM Analysis
+Customers were scored on three dimensions:
 
+| Dimension | Definition |
+|---|---|
+| **Recency** | How recently did the customer make a purchase? |
+| **Frequency** | How often do they purchase? |
+| **Monetary** | How much do they spend on average? |
 
-<img width="1140" alt="Screenshot 2025-01-03 at 5 36 58 PM" src="https://github.com/user-attachments/assets/84ab1737-e35b-4ed5-a0a3-c7317ec9e4a1" />
+Each customer received an RFM score used to assign them to one of four segments.
 
-- Step 10 :  Customer Segmentation
-                    •	19K total customers
-                    •	53.28% (10.19K customers)low spenders, 35.1%(6.73K) at risk, 9.26% (1.77K)loyal, 1.77%(340 customers) high value
-                    •	669 customers without purchase in the last 12 months
-                    •	Average recency: 5.80
-                    •	Average monetary value: 5.75K
-                    •	Average frequency: 6.35
+---
 
-<img width="1135" alt="Screenshot 2025-01-03 at 1 38 18 PM" src="https://github.com/user-attachments/assets/05a0d064-9b7e-4b2b-9e5f-f282ebc0bf43" />
+## Key Findings
 
-- Step 11 : Product Performance
-   •	Top products frequently bought together: 
-                 * Mountain Bottle Cage & Water Bottle - 30 oz.
-                 * Road Bottle Cage & Water Bottle - 30 oz.
-                 * AWC Logo Cap & Long-Sleeve Logo Jersey L
- 
- <img width="610" alt="Screenshot 2025-01-03 at 5 24 35 PM" src="https://github.com/user-attachments/assets/a65b4655-fbff-4be8-9b8e-72e329a0d86e" />
+**Customer Overview**
+- 19,000 total customers analysed
+- Average recency: 5.80 days since last purchase
+- Average frequency: 6.35 purchases per customer
+- Average monetary value: $5,750 per customer
+- 669 customers (3.52%) have been inactive for 12+ months
 
-  •	High frequency boughtproducts: Mountain Bottle Cage, Water Bottle - 30 oz., Road Bottle Cage, AWC Logo Cap, Sport-100 Helmet Blue, Sport-100 Helmet Black, HL Mountain Tire and Mountain Tire Tube.
- 
-    
-  •	Total sales by product categories: Accessories (35.19%), Bike (33.53%), Clothing (31.28%)
+**Customer Segments**
+| Segment | Count | % of Customers |
+|---|---|---|
+| Low Spenders | 10,190 | 53.28% |
+| At-Risk | 6,730 | 35.10% |
+| Loyal | 1,770 | 9.26% |
+| High-Value | 340 | 1.77% |
 
-<img width="317" alt="Screenshot 2025-01-03 at 5 29 32 PM" src="https://github.com/user-attachments/assets/16d80791-4b59-4364-9d7c-3175dd224310" />
+**Top Product Combinations (Cross-Sell Opportunities)**
+- Mountain Bottle Cage + Water Bottle
+- Road Bottle Cage + Water Bottle
+- AWC Logo Cap + Long-Sleeve Jersey
 
+**Sales by Category**
+| Category | Revenue |
+|---|---|
+| Accessories | $92.76M |
+| Bikes | $88.39M |
+| Clothing | $82.44M |
 
+---
 
-   •	Total sales: Accessories ($92.76M), Bike ($88.39M), Clothing ($82.44M)
-   
-   <img width="501" alt="Screenshot 2025-01-03 at 5 27 43 PM" src="https://github.com/user-attachments/assets/fb4637f4-f5bb-4c49-8e9f-9a64a417c858" />
+## Dashboard Preview
+> Add a screenshot of your Power BI dashboard here.
+
+---
+
+## SQL Queries
+See the [`AdventureWorks-Queries`](./AdventureWorks-Queries) folder for all SQL scripts used in this analysis.
+
+---
+
+## How to Reproduce
+1. Restore the AdventureWorks database in SQL Server or Azure Data Studio
+2. Run the SQL scripts in the `AdventureWorks-Queries` folder in sequence
+3. Export results to Excel
+4. Import into Power BI and connect to the dashboard layout
+
+---
+
+## Data Source
+Microsoft AdventureWorks sample database (publicly available via Microsoft)
